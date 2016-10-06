@@ -9,6 +9,25 @@ package khj.discountstrategy;
  *
  * @author kevinjerke
  */
-public class FlatAmtDiscount extends DiscountStrategy {
+public class FlatAmtDiscount implements DiscountStrategy {
+    private double discountRate;
+
+    public FlatAmtDiscount(double Rate) {
+         setDiscountRate(discountRate);
+    }
+    
+    
+    public final double getDiscountRate() {
+        return discountRate;
+    }
+
+    public final void setDiscountRate(double discountRate) {
+        this.discountRate = discountRate;
+    }
+    
+    public final double getDiscountAmt(int qty, double unitCost){
+        return discountRate;
+    }
+     
     
 }

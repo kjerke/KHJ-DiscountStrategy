@@ -9,6 +9,6 @@ package khj.discountstrategy;
  *
  * @author kevinjerke
  */
-public class DiscountStrategy {
-    
+public interface DiscountStrategy {
+    public abstract double getDiscountAmt(int qty, double unitCost);
 }

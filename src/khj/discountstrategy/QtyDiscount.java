@@ -9,6 +9,6 @@ package khj.discountstrategy;
  *
  * @author kevinjerke
  */
-public class QtyDiscount extends DiscountStrategy{
+public class QtyDiscount implements DiscountStrategy{
     
 }

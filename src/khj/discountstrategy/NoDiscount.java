@@ -9,6 +9,26 @@ package khj.discountstrategy;
  *
  * @author kevinjerke
  */
-public class NoDiscount extends DiscountStrategy {
+public class NoDiscount implements DiscountStrategy {
+    private double discountRate;
+    private int noDiscount = 0;
+
+    
+    public NoDiscount() {
+        
+    }
+    
+    public final double getDiscountAmt(int qty, double unitCost){
+        return discountRate;
+    }
+    
+    public final double getDiscountRate() {
+        return discountRate;
+    }
+
+    public final void setDiscountRate(double discountRate) {
+        this.discountRate = discountRate;
+    }
+    
     
 }

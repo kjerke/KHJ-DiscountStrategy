@@ -9,6 +9,24 @@ package khj.discountstrategy;
  *
  * @author kevinjerke
  */
-public class PercOfDiscount extends DiscountStrategy {
+public class PercOfDiscount implements DiscountStrategy {
+        private double discountRate;
+
+        
+        
+        public PercOfDiscount(double discountRate) {
+            setDiscountRate(discountRate);
+        }
+        
+    public final double getDiscountAmt(int qty, double unitCost){
+        return unitCost * qty * discountRate;
+    }
     
+    public final double getDiscountRate() {
+        return discountRate;
+    }
+
+    public final void setDiscountRate(double discountRate) {
+        this.discountRate = discountRate;
+    }
 }
