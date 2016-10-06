@@ -11,7 +11,7 @@ package khj.discountstrategy;
  */
 public class NoDiscount implements DiscountStrategy {
     private double discountRate;
-    private int noDiscount = 0;
+    private final int noDiscount = 0;
 
     
     public NoDiscount() {

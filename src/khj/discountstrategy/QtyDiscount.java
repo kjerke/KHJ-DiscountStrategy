@@ -10,5 +10,17 @@ package khj.discountstrategy;
  * @author kevinjerke
  */
 public class QtyDiscount implements DiscountStrategy{
+    private double discountRate;
+    private final int noDiscount = 0;
+
     
+    
+    
+    public final double getDiscountRate() {
+        return discountRate;
+    }
+
+    public final void setDiscountRate(double discountRate) {
+        this.discountRate = discountRate;
+    }
 }
