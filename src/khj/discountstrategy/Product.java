@@ -10,5 +10,53 @@ package khj.discountstrategy;
  * @author kevinjerke
  */
 public class Product {
+    private String productId; 
+    private String productName;
+    private double unitCost;
+    private DiscountStrategy discount;
+    
+    
+    
+    public Product(productId String, productName String, unitCost double) {
+        setProductId(productId);
+        setProductName(productName);
+        setUnitCost(unitCost);
+    }
+
+    public final String getProductId() {
+        return productId;
+    }
+
+    public final void setProductId(String productId) {
+        this.productId = productId;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public final void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public final double getUnitCost() {
+        return unitCost;
+    }
+
+    public final void setUnitCost(double unitCost) {
+        this.unitCost = unitCost;
+    }
+
+    public final DiscountStrategy getDiscount() {
+        return discount;
+    }
+
+    public final void setDiscount(DiscountStrategy discount) {
+        this.discount = discount;
+    }
+    
+    public final double getDiscountAmount(int qty){
+        return discount.getDiscountAmt(qty, unitCost);
+    }
     
 }

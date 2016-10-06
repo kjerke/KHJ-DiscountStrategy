@@ -10,5 +10,5 @@ package khj.discountstrategy;
  * @author kevinjerke
  */
 public interface DiscountStrategy {
-    public abstract double getDiscountAmt(int qty, double unitCost);
+    public abstract double getDiscountAmt(double qty, double unitCost);
 }

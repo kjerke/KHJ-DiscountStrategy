@@ -9,6 +9,11 @@ package khj.discountstrategy;
  *
  * @author kevinjerke
  */
-public class ProductDatabase extends Product{
+public interface ArrayDatabase {
+  
+    
+    public abstract Customer findCustomerById(String customerId);
+    
+    public abstract Product findProductById(String productId);
     
 }

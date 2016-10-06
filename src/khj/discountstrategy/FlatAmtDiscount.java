@@ -25,7 +25,8 @@ public class FlatAmtDiscount implements DiscountStrategy {
         this.discountRate = discountRate;
     }
     
-    public final double getDiscountAmt(int qty, double unitCost){
+    @Override
+    public final double getDiscountAmt(double qty, double unitCost){
         return discountRate;
     }
      

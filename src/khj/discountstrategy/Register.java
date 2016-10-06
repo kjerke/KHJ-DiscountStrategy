@@ -10,5 +10,9 @@ package khj.discountstrategy;
  * @author kevinjerke
  */
 public class Register {
-    
+   private Receipt receipt;
+   private String storeName;
+   private ReceiptFormatStrategy fmt;
+   private OutputStrategy[] outputs;
+   
 }

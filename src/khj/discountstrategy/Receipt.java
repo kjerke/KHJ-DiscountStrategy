@@ -10,5 +10,5 @@ package khj.discountstrategy;
  * @author kevinjerke
  */
 public class Receipt {
-    
+   
 }

@@ -18,7 +18,8 @@ public class PercOfDiscount implements DiscountStrategy {
             setDiscountRate(discountRate);
         }
         
-    public final double getDiscountAmt(int qty, double unitCost){
+        @Override
+    public final double getDiscountAmt(double qty, double unitCost){
         return unitCost * qty * discountRate;
     }
     
