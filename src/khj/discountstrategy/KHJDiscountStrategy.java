@@ -15,7 +15,26 @@ public class KHJDiscountStrategy {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
-}
+       ArrayDatabase ad = new FakeDatabase();
+       ReceiptFormat rf = new VerboseReceiptFormat();
+       
+       OutputFormat[] outputs = {
+           new ConsoleOutput(),
+           new GuiOutput
+          };
+       
+       
+       Register register = new Register("Kohls Department Store");
+       register.startNewSale("100", ad, rf, outputs);
+       
+       
+       register.addItemToSale("1", 1);
+       register.addItemToSale("10", 1);
+       register.addItemToSale("15", 3);
+       
+       
+       register.endSale();
+                       
+       }
+    }    
+

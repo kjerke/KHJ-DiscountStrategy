@@ -9,6 +9,6 @@ package khj.discountstrategy;
  *
  * @author kevinjerke
  */
-public interface OutputFormat {
-    public abstract void output(String data);
+public class VerboseReceiptFormat {
+    
 }

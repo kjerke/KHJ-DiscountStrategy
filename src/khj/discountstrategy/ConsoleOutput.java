@@ -9,6 +9,12 @@ package khj.discountstrategy;
  *
  * @author kevinjerke
  */
-public class ConsoleOutput extends OutputFormat {
+public class ConsoleOutput implements OutputFormat {
     
+    
+    
+    @Override
+    public final void output(String data){
+        System.out.println(data);
+    }
 }

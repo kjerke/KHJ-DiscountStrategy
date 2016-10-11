@@ -5,10 +5,16 @@
  */
 package khj.discountstrategy;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author kevinjerke
  */
-public class GuiOutput extends OutputFormat{
+public class GuiOutput implements OutputFormat {
+    
+    public final void output(String data) {
+        JOptionPane.showMessageDialog(null, data);
+    }
     
 }

@@ -11,15 +11,15 @@ package khj.discountstrategy;
  */
 public class NoDiscount implements DiscountStrategy {
     private double discountRate;
-    private final int noDiscount = 0;
+    private final int NO_DISCOUNT = 0;
 
     
     public NoDiscount() {
-        
+        setDiscountRate(NO_DISCOUNT);
     }
     
-    public final double getDiscountAmt(int qty, double unitCost){
-        return discountRate;
+    public final double getDiscountAmt(double qty, double unitCost){
+        return NO_DISCOUNT;
     }
     
     public final double getDiscountRate() {
