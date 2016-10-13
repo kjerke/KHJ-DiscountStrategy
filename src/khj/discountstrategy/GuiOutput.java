@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class GuiOutput implements OutputFormat {
     
+    @Override
     public final void output(String data) {
         JOptionPane.showMessageDialog(null, data);
     }

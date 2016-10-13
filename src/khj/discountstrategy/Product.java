@@ -17,7 +17,7 @@ public class Product {
     
     
     
-    public Product(productId String, productName String, unitCost double) {
+    public Product(String productId, String productName, double unitCost) {
         setProductId(productId);
         setProductName(productName);
         setUnitCost(unitCost);

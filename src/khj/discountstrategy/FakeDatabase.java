@@ -16,13 +16,13 @@ public class FakeDatabase implements ArrayDatabase {
         new Customer("101", "Sam Smith"),
         new Customer("102", "Kevin Smith")
     };
-  /*  
+   
     private Product[] products = {
        new Product("1", "Bucks Sweatshirt  ", 59.99),
         new Product("10", "Nike Running Shoes   ", 109.99),
         new Product("15", "Nike Socks    ", 14.99),
     };
-*/
+
     @Override
     public final Customer findCustomerById(String customerId){
          Customer customer = null;
